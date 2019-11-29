@@ -1,0 +1,29 @@
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>2.0</jsp-version>
+	<shortname>simple</shortname>
+	<uri>/dataTag</uri>
+	
+	<tag>
+		<name>connect</name>
+		<body-content>JSP</body-content>
+		<tag-class>com.phoenix.demos.ConnectDatabase</tag-class>
+		<attribute>
+			<name>database</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	<tag>
+		<name>store</name>
+		<body-content>empty</body-content>
+		<tag-class>com.phoenix.demos.DataStore</tag-class>
+		<attribute>
+			<name>table</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>
